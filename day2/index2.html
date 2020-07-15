@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+ // using var
+      var a = 10;
+       a = 20;
+      document.write("Using var:",a);          // Using var :20
+      
+      document.write("<br/>");
+
+//  using let
+
+     // let a = 30;
+      {
+          let  a = 40;
+               a=50;
+          document.write("Using let:",a);       //  Using let :50
+      }
+      document.write("<br/>");
+      document.write(a);                        // 20
+
+//  using const      
+      
+       const name = "adam";
+        // name = "eva";
+       document.write("<br/>");
+       document.write("Using const:",name);   // Using const:adam
+       const dark = ["jonas","martha"]       
+       document.write(dark)                   // jonas,martha
+       document.write("<br/>");
+       dark.push("ulrich");
+       document.write("<br/>");
+       document.write(dark)                   // jonas,martha,ulrich
+    </script>
+</body>
+</html>
